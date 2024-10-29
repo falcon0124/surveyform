@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id = "title">Survey Form</h1>
+    <p id = "description">Thank you for your valuable time</p>
+    <form id = "survey-form">
+      <fieldset>
+        <label for = "name" id = "name-label">Name<input placeholder="Enter your name" class ="fill" required id = "name" type="text"></label>
+        <label for = "email" id = "email-label">Email<input  placeholder="Enter your email" class ="fill" required id = "email" type="email"></label>
+        <label for = "number" id = "number-label">Age<input  placeholder="Enter your age" class ="fill" required id ="number"  type="number" min = "15" max = "60"></label>
+        <label>Gender: <select id= "dropdown">
+          <option value = "">(Select gender)</option>
+          <option value = "m">Male</option>
+          <option value = "f">Female</option>
+          <option value = "t">Transgender</option>
+          <option value = "nill">Prefer not to say</option>
+          </select></label>
+      </fieldset>
+      <fieldset>
+        <legend>What are you here for?</legend>
+        <label for = "study"><input checked value = "1" type = "radio" name = "puspose" id = "study" class = "inline" >Learning</label>
+        <label for = "job"><input value = "2" type = "radio" name = "puspose" id ="job" class = "inline" >Job</label>
+        <label for = "freelance"><input value = "3" type = "radio" name = "puspose" id = "freelance" class = "inline" >Freelance</label>
+      </fieldset>
+      <fieldset>
+        <legend>Tell us what we can improve.</legend>
+        <label for ="frontend"><input type = "checkbox" value = "a" id = "frontend" class = "inline">Front-end</input></label>
+        <label for ="backend"><input type = "checkbox" value = "b" id = "backend" class = "inline" >Back-end</input></label>
+        <label for ="challenges"><input type = "checkbox" value = "c" id = "challenges" class = "inline" >Challenges</input></label>
+        <label for ="videos"><input type = "checkbox" value = "d" id = "videos" class = "inline" >Videos</input></label>
+        <label for ="community"><input type = "checkbox" value = "e" id = "community" class = "inline" >Community</input></label>
+        <label for ="forum"><input type = "checkbox" value = "f" id = "forum" class = "inline" >Forums</input></label>
+        <label for ="meetups"><input type = "checkbox" value = "g" id = "meetups" class = "inline" >Meetups</input></label>
+      </filedset>
+      <fieldset><label>Please leave a suggestion: <textarea id ="suggestions"rows = "3" cols = "30"   ></textarea></label></fieldset>
+      <input id="submit" type = "submit" value="Submit" class ="fill" >
+    </form>
+  </body>
